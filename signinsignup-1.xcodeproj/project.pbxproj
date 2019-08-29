@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		716324F12317BC6600014AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716324F02317BC6600014AAC /* AppDelegate.swift */; };
-		716324F32317BC6600014AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716324F22317BC6600014AAC /* ViewController.swift */; };
+		716324F32317BC6600014AAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716324F22317BC6600014AAC /* LoginViewController.swift */; };
 		716324F62317BC6600014AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716324F42317BC6600014AAC /* Main.storyboard */; };
 		716324F92317BC6600014AAC /* signinsignup_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 716324F72317BC6600014AAC /* signinsignup_1.xcdatamodeld */; };
 		716324FB2317BC6800014AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716324FA2317BC6800014AAC /* Assets.xcassets */; };
 		716324FE2317BC6800014AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716324FC2317BC6800014AAC /* LaunchScreen.storyboard */; };
+		716325062317BDB500014AAC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716325052317BDB500014AAC /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		716324ED2317BC6600014AAC /* signinsignup-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "signinsignup-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		716324F02317BC6600014AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		716324F22317BC6600014AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		716324F22317BC6600014AAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		716324F52317BC6600014AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		716324F82317BC6600014AAC /* signinsignup_1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = signinsignup_1.xcdatamodel; sourceTree = "<group>"; };
 		716324FA2317BC6800014AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716324FD2317BC6800014AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716324FF2317BC6800014AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716325052317BDB500014AAC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				716324F02317BC6600014AAC /* AppDelegate.swift */,
-				716324F22317BC6600014AAC /* ViewController.swift */,
+				716324F22317BC6600014AAC /* LoginViewController.swift */,
+				716325052317BDB500014AAC /* RegisterViewController.swift */,
 				716324F42317BC6600014AAC /* Main.storyboard */,
 				716324FA2317BC6800014AAC /* Assets.xcassets */,
 				716324FC2317BC6800014AAC /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				716324F92317BC6600014AAC /* signinsignup_1.xcdatamodeld in Sources */,
-				716324F32317BC6600014AAC /* ViewController.swift in Sources */,
+				716324F32317BC6600014AAC /* LoginViewController.swift in Sources */,
 				716324F12317BC6600014AAC /* AppDelegate.swift in Sources */,
+				716325062317BDB500014AAC /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

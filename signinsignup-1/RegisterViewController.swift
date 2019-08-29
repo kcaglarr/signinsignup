@@ -34,12 +34,30 @@ class RegisterViewController: UIViewController {
         
         let params = "name=" + name + "&lastName=" + lastName + "&email=" + email + "&password=" + password
         
-        print(name, lastName, email, password, passAgain)
-        print(params)
+        //print(name, lastName, email, password, passAgain)
+        //print(params)
         
         if password != passAgain {
             print("Şifre tekrarları uymuyor!")
         }
+        
+        let urlString = "http://localhost:8888/signinsignup/register.php"
+        let url = URL(string: urlString)
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.httpBody = params.data(using: .utf8)
+        
+        debugPrint("------> request:",request)
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            if error != nil {
+                print("ERROR:", error!)
+            }
+        }
+        
+        task.resume()
+        
     }
     
 

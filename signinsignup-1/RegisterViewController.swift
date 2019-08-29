@@ -36,6 +36,10 @@ class RegisterViewController: UIViewController {
         
         print(name, lastName, email, password, passAgain)
         print(params)
+        
+        if password != passAgain {
+            print("Şifre tekrarları uymuyor!")
+        }
     }
     
 

@@ -168,6 +168,35 @@
             </objects>
             <point key="canvasLocation" x="450.72463768115944" y="-433.25892857142856"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="ZFG-Ra-9st">
+            <objects>
+                <viewController storyboardIdentifier="HomePage" id="hSg-5s-e8N" customClass="HomeViewController" customModule="signinsignup_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rhy-cN-vga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tebrikler Giriş Başarılı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpV-vy-m0D">
+                                <rect key="frame" x="20" y="438" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SEX-HF-7D2" firstAttribute="trailing" secondItem="vpV-vy-m0D" secondAttribute="trailing" constant="20" id="9Wd-Nn-TTZ"/>
+                            <constraint firstItem="vpV-vy-m0D" firstAttribute="leading" secondItem="SEX-HF-7D2" secondAttribute="leading" constant="20" id="OZg-xA-eth"/>
+                            <constraint firstItem="SEX-HF-7D2" firstAttribute="bottom" secondItem="vpV-vy-m0D" secondAttribute="bottom" constant="403" id="UMe-xy-ULX"/>
+                            <constraint firstItem="vpV-vy-m0D" firstAttribute="top" secondItem="SEX-HF-7D2" secondAttribute="top" constant="394" id="uIz-58-x03"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SEX-HF-7D2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnX-gU-fuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292.753623188406" y="-434.59821428571428"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dVD-KY-ujo">
             <objects>

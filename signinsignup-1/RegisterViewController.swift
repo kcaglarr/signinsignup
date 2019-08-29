@@ -54,6 +54,39 @@ class RegisterViewController: UIViewController {
             if error != nil {
                 print("ERROR:", error!)
             }
+            
+            else{
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    
+                    //debugPrint("**********json:", json!)
+                    
+                    if let jsonParse = json {
+                        var message:String!
+                        var status:String!
+                        
+                        message = jsonParse["message"] as? String
+                        status  = jsonParse["status"] as? String
+                        
+                        //debugPrint(message!, status!)
+                        
+                        if (status == "Success") {
+                            print(message!)
+                            
+                            DispatchQueue.main.async {
+                                self.nameField.text = ""
+                                self.lastNameField.text = ""
+                                self.emailField.text = ""
+                                self.passField.text = ""
+                                self.passFieldAgain.text = ""
+                            }
+                        }
+                    }
+                }
+                catch {
+                    print("Error")
+                }
+            }
         }
         
         task.resume()
